@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <div class="grid">
+        <div class="container-context">
+            <h1>Temperature sensor</h1>
+            <div class="container-context-chart">
+                <div class="chart-container">
+                    <canvas id="tempSensor" width="400" height="100"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="pertinenceTempSensor" width="400" height="100"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="container-context">
+            <h1>Distance sensor</h1>
+            <div class="container-context-chart">
+                <div class="chart-container">
+                    <canvas id="distSensor" width="400" height="100"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="pertinenceDistSensor" width="400" height="100"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="container-context">
+            <h1>Motor</h1>
+            <div class="container-context-chart">
+                <div class="chart-container">
+                    <canvas id="motor" width="400" height="100"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="pertinenceMotor" width="400" height="100"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script defer src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+        integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/moment@^2"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@^1"></script>
+    <script defer src="/helper/chart-worker.js"></script>
+    <script defer src="/helper/update-chart.helper.js"></script>
+</body>
+
+</html>
